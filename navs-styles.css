@@ -1,0 +1,212 @@
+/* Interactive Links (hover effects/color changes or underlines) */
+/* Main Horizontal Layout (hover effects/custom icons) */
+/* Transitions */
+
+/* Menu Font */
+/* Ysabeau SC */
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+
+/* Main Menu */
+.main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: black;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li, .main-menu a { 
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 16px 18px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Ysabeau SC';
+    white-space: nowrap;
+}
+
+.main-menu-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    width: auto;
+}
+
+.main-menu a:visited {
+    color: rgba(174, 255, 255, 0.75);
+}
+
+.main-menu a:hover, .main-menu a:target {
+    background-color: whitesmoke !important;
+    color: black !important;
+}
+
+.main-menu a.active {
+    background-color: lightslategray !important;
+    color: white !important;
+}
+
+.main-menu-items li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.main-menu-items a {
+    text-decoration: none;
+}
+  
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .main-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 60px;
+        padding: 10px;
+    }
+
+    .main-menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-menu-items li {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .main-menu-items a {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+/* Media Query for Very Small Screens */
+@media (max-width: 480px) {
+    .main-menu {
+        flex-direction: column;
+        height: 60px;
+        padding: 10px;
+    }
+
+    .main-menu-items a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}
+
+
+/* Page Menus */
+
+.services-menu, 
+.games-menu,
+.side-bar {
+    height: 100%;
+    width: 130px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+.services-menu-items, 
+.games-menu-items,
+.side-bar-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services-menu ul, 
+.games-menu ul,
+.side-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services-menu li, 
+.services-menu a, 
+.games-menu li, 
+.games-menu a,
+.side-bar li,
+.side-bar a {
+    width: 130px;
+    font-family: 'Ysabeau SC';
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    height: 100%;
+}
+
+.services-menu-items li,
+.games-menu-items li,
+.side-bar-items {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.services-menu-items a,
+.games-menu-items a,
+.side-bar-items a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
+/* 
+button {
+    padding: 2px;
+    border: 3px outset #ddd;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+} */
+
+.services-menu a:visited,
+.games-menu a:visited {
+    color: rgb(54, 5, 5);
+}
+
+.services-menu a:hover,
+.services-menu-items a:hover,
+.games-menu a:hover,
+.games-menu-items a:hover {
+    cursor: pointer;
+    background-color: rgb(54, 5, 5)!important;
+    color: whitesmoke !important;
+    text-shadow: none !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+

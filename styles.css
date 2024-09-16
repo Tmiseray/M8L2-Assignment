@@ -1,0 +1,228 @@
+/* Tables: highlighted headers, cell padding, border styles, alternating row colors */
+
+/* Playwrite AU NSW */
+@import url(https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap);
+
+/* Arsenal SC */
+@import url(https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+
+/* Poppins */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(210, 250, 249, 0.76);
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font: normal 18px/22px "Poppins", sans-serif;
+    background-color: lightsteelblue;
+    color: #2e2e2e;
+    margin-top: 60px;
+    margin-left: 210px;
+    margin-right: 30px;
+}
+
+main {
+    flex: 1;
+}
+
+hr {
+    background-color: rgb(7, 7, 52);
+    height: 2px;
+}
+
+h1, h2, h3 {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    color: black;
+    text-shadow: 
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 26px;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    color: black;
+    text-shadow: 
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray;
+  }
+
+p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+section[id], article[id] {
+    scroll-margin-top: 90px;
+}
+
+article {
+    padding: 20px;
+    border: 2px solid rgb(29, 37, 80);
+    background-color: rgba(210, 250, 249, 0.619);
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+div {
+    padding: 5px;
+}
+
+
+table {
+    padding: 5px;
+    border: 5px outset #ddd;
+    background-color: rgba(224, 255, 255, 0.299);
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+td {
+    padding-left: 15px;
+}
+
+td + td + td {
+    padding-left: 0;
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* List Styles */
+h3 + ul {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Specific Styles for Nested Lists */
+li {
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+button {
+    font-size: 24px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px outset #ddd;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+button a {
+    width: 100%;
+}
+
+button:hover, button:visited {
+    background-color: rgb(54, 5, 5);
+    color: whitesmoke;
+}
+
+button:active {
+    background-color: rgb(54, 5, 5);
+    color: whitesmoke;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.buttons {
+    display: flex;
+}
+
+.button1,
+.button2,
+.button3 {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.game1-row1,
+.game2-row1,
+.game3-row1 {
+    display: flex;
+}
+
+.game1-row1-col1 {
+
+}
+
+.game1-row1-col2 {
+    
+}
+
+.game2-row1-col1 {
+    
+}
+
+.game2-row1-col2 {
+    
+}
+
+.game3-row1-col1 {
+    
+}
+
+.game3-row1-col2 {
+    
+}

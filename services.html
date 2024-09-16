@@ -1,0 +1,181 @@
+<!-- Main Menu -->
+<!-- Services Offered (maybe tier based) -->
+<!-- User Registration Form (name, email, password, and submit button) -->
+<!-- Side Bar Menu -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Our Services</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Services Page">
+        <meta name="author" content="Taylor Miseray">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="navs-styles.css">
+        <link rel="stylesheet" href="forms-styles.css">
+    </head>
+
+    <body>
+        <nav>
+            <div id="main-menu" class="main-menu">
+                <ul class="main-menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <br>
+            <h1>Services</h1>
+            <p>Below you will find all the services we offer at <i>Chronic Gamer</i>!<br>Choose wisely adventurer!</p>
+            <br>
+        </header>
+
+        <br>
+        <hr>
+        <br>
+
+        <main>
+            <nav>
+                <div id="services-menu" class="services-menu">
+                    <ul class="services-menu-items">
+                        <li><a href="#tier1">Tier 1</a></li>
+                        <li><a href="#tier2">Tier 2</a></li>
+                        <li><a href="#free-play">Free Play!</a></li>
+                        <li><a href="#form">Register Now</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section id="tier1">
+                <h2>Tier 1</h2>
+                <article>
+                    <p>This service option is built for my binge gamers. Meant for the ones who can't wait for the new game to come out and get on the wait list!</p>
+                </article>
+                <article>
+                    <ul>
+                        <li>Demo Games Before They Release</li>
+                        <li>Pre-Purchase Options</li>
+                        <li>20% Discount on ALL Games</li>
+                        <li>Unlimited Access to All Games</li>
+                        <li>$14.99 / Month</li>
+                    </ul>
+                </article>
+                <article>
+                    <a href="#form"><button>Register & Subscribe</button></a>
+                </article>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="tier2">
+                <h2>Tier 2</h2>
+                <article>
+                    <p>This subscription is better for the team players or families. The ones who enjoy going on an daventure with their party!</p>
+                </article>
+                <article>
+                    <ul>
+                        <li>Each Party Member Adds 5% to Game Discounts</li>
+                        <li>Multi-Player Pre-Purchase Options</li>
+                        <li>Mulit-Player Demo Options</li>
+                        <li>Unlimited Access to ALL Games</li>
+                        <li>3 Player Minimum</li>
+                        <li>$3.99 / Player / Month</li>
+                    </ul>
+                </article>
+                <article>
+                    <a href="#form"><button>Register & Subscribe</button></a>
+                </article>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="free-play">
+                <h2>Free Play!</h2>
+                <article>
+                    <p>Plain and Simple!</p>
+                </article>
+                <article>
+                    <ul>
+                        <li>Only Pay for the Games You Want</li>
+                        <li>Unlimited Access to Free to Play Games</li>
+                        <li>Free!</li>
+                    </ul>
+                </article>
+                <article>
+                    <a href="#form"><button>Register & Subscribe</button></a>
+                </article>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="form">
+                <h2>Registration Form</h2>
+                <form action="/register" method="post">
+                    <fieldset>
+                        <legend>Basic Information</legend>
+
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <br>
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
+                        <br>
+                        <label>Preferred Contact Method:</label>
+                        <input type="radio" id="email" name="contact-method" value="email">
+                        <label for="email">Email</label>
+                        <input type="radio" id="phone" name="contact-method" value="phone">
+                        <label for="phone">Phone</label>
+                        <br>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <fieldset>
+                        <legend>Login Information</legend>
+
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <br>
+                        <label for="subscription">Subscription option:</label>
+                        <select name="subscription" id="subscription">
+                            <option value="tier1">Tier 1</option>
+                            <option value="tier2">Tier 2</option>
+                            <option value="free-play">Free Play</option>
+                        </select>
+                        <br>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <br>
+        <hr>
+        <br>
+        <footer>
+            <p>&copy; 2024 Chronic Gamer. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

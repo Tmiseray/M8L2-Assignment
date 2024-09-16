@@ -1,0 +1,149 @@
+<!-- Main Menu -->
+<!-- Contact Options -->
+<!-- Feedback Form -->
+<!-- Side Bar Menu -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Contact Page">
+        <meta name="author" content="Taylor Miseray">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="navs-styles.css">
+        <link rel="stylesheet" href="forms-styles.css">
+    </head>
+
+    <body>
+        <nav>
+            <div id="main-menu" class="main-menu">
+                <ul class="main-menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <br>
+            <h1>Contact Us</h1>
+            <p>We'd Love to hear from you!</p>
+            <br>
+        </header>
+
+        <br>
+        <hr>
+        <br>
+                
+        <main>
+            <nav>
+                <div id="side-bar" class="side-bar">
+                    <ul class="side-bar-items">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="feedback-form" id="feedback-form">
+                <form action="/submit-feedback" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <br>
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
+                        <br>
+                        <label>Preferred Contact Method:</label>
+                        <input type="radio" id="email" name="contact-method" value="email">
+                        <label for="email">Email</label>
+                        <input type="radio" id="phone" name="contact-method" value="phone">
+                        <label for="phone">Phone</label>
+                        <br>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                    <br>
+                    <hr>
+                    <br>
+                    <fieldset class="rating">
+                        <legend>Game Rating</legend>
+
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" value="title" placeholder="Enter game title">
+
+                        <label>
+                            <input type="radio" name="stars" value="1">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="2">
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="3">
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="4">
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="5">
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                    <br>
+                    <hr>
+                    <br>
+                    <fieldset>
+                        <legend>Game Request</legend>
+
+                        <label for="request-title">Title:</label>
+                        <input type="text" id="title" name="title" value="title" placeholder="Enter game title">
+                        <br>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                    <br>
+                    <hr>
+                    <br>
+                    <fieldset>
+                        <legend>Additional Comments/Feedback</legend>
+
+                        <textarea name="comments" id="comments" placeholder="Enter your additional comments or feedback"></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <br>
+        <hr>
+        <br>
+        <footer>
+            <p>&copy; 2024 Chronic Gamer. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
