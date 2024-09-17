@@ -49,7 +49,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 46px;
     color: black;
     text-shadow: 
@@ -77,6 +77,7 @@ h3 {
     line-height: 28px;
     margin-bottom: 10px;
     color: black;
+    text-decoration: underline;
     text-shadow: 
         1px 1px 0 darkgray,
         1px 1px 0 darkgray,
@@ -107,6 +108,10 @@ article {
 
 div {
     padding: 5px;
+}
+
+section[id] h2 {
+    font-size: 36px;
 }
 
 
@@ -149,17 +154,13 @@ ul {
     padding-left: 30px;
     margin-top: 10px;
     font-size: 18px;
+    list-style-type: disc;
 }
 
-/* Specific Styles for Nested Lists */
 li {
     margin-bottom: 5px;
     margin-right: 10px;
     font-size: 18px;
-}
-
-ul {
-    list-style-type: disc;
 }
 
 button {

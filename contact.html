@@ -66,6 +66,7 @@
                         <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
                         <br>
                         <label>Preferred Contact Method:</label>
+                        <br>
                         <input type="radio" id="email" name="contact-method" value="email">
                         <label for="email">Email</label>
                         <input type="radio" id="phone" name="contact-method" value="phone">
@@ -76,42 +77,24 @@
                     <br>
                     <hr>
                     <br>
-                    <fieldset class="rating">
+                    <fieldset>
                         <legend>Game Rating</legend>
 
                         <label for="title">Title:</label>
                         <input type="text" id="title" name="title" value="title" placeholder="Enter game title">
-
-                        <label>
-                            <input type="radio" name="stars" value="1">
-                            <span class="icon">★</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="stars" value="2">
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="stars" value="3">
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="stars" value="4">
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="stars" value="5">
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                            <span class="icon">★</span>
-                        </label>
+                        <br>
+                        <div class="rating">
+                            <input id="rating1" type="radio" name="rating" value="1">
+                            <label for="rating1"></label>
+                            <input id="rating2" type="radio" name="rating" value="2">
+                            <label for="rating2"></label>
+                            <input id="rating3" type="radio" name="rating" value="3">
+                            <label for="rating3"></label>
+                            <input id="rating4" type="radio" name="rating" value="4">
+                            <label for="rating4"></label>
+                            <input id="rating5" type="radio" name="rating" value="5">
+                            <label for="rating5"></label>
+                          </div>
                         <button type="reset">Reset</button>
                     </fieldset>
                     <br>
